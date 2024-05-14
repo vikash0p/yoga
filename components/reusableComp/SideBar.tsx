@@ -10,12 +10,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 
-export function SheetDemo() {
+export function Sidebar() {
   return (
-    <Sheet>
+    <Sheet >
       <SheetTrigger asChild>
-        <Button variant="outline">Open</Button>
+        <Button variant="link"><Menu/></Button>
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
@@ -24,7 +25,7 @@ export function SheetDemo() {
             Make changes to your profile here. Click save when youre done.
           </SheetDescription>
         </SheetHeader>
-       
+
         <SheetFooter>
           <SheetClose asChild>
             <Button type="submit">Save changes</Button>
