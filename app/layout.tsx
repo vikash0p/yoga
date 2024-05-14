@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import GlobalLayout from "@/utils/GlobalLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mantra",
-  description: "Yoga: a holistic practice uniting mind, body, and spirit through postures, breathwork, and meditation. Enhances flexibility, strength, and inner peace, fostering balance and harmony within oneself and the universe.",
+  description:
+    "Yoga: a holistic practice uniting mind, body, and spirit through postures, breathwork, and meditation. Enhances flexibility, strength, and inner peace, fostering balance and harmony within oneself and the universe.",
 };
 
 export default function RootLayout({
@@ -16,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <GlobalLayout>{children}</GlobalLayout>
+      </body>
     </html>
   );
 }
