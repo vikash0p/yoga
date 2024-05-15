@@ -18,4 +18,5 @@ export type chooses={
     id:string,
     title:string,
     des:string,
+    img:string,
 }

@@ -88,21 +88,25 @@ export const choose: chooses[] = [
   {
     id: "01",
     title: "Meditaion",
+    img:"/HOME2_class_image_02.jpg",
     des: "Nunc non blandit massa enim nec dui nunc mattis. Bibendum at varius vel pharetra. Volutpat consequat mauris nunc congue nisi. Elit scelerisque mauris pellentesque pulvinar.Viverra nam libero justo laoreet sit amet ante metus dictum cursus sit.",
   },
   {
     id: "02",
     title: "Relaxing Pose",
+    img:"/home2_image_gallery_01.jpg",
     des: "Nunc non blandit massa enim nec dui nunc mattis. Bibendum at varius vel pharetra. Volutpat consequat mauris nunc congue nisi. Elit scelerisque mauris pellentesque pulvinar.Viverra nam libero justo laoreet sit amet ante metus dictum cursus sit.",
   },
   {
     id: "03",
     title: "Simhasana Yoga",
+    img:"/home2_image_gallery_02.jpg",
     des: "Nunc non blandit massa enim nec dui nunc mattis. Bibendum at varius vel pharetra. Volutpat consequat mauris nunc congue nisi. Elit scelerisque mauris pellentesque pulvinar.Viverra nam libero justo laoreet sit amet ante metus dictum cursus sit.",
   },
   {
     id: "04",
     title: "Balancinü",
+    img:"/HOME2_class_image_01.jpg",
     des: "Nunc non blandit massa enim nec dui nunc mattis. Bibendum at varius vel pharetra. Volutpat consequat mauris nunc congue nisi. Elit scelerisque mauris pellentesque pulvinar.Viverra nam libero justo laoreet sit amet ante metus dictum cursus sit.",
   },
 ];
