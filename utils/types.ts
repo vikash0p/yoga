@@ -20,3 +20,11 @@ export type chooses={
     des:string,
     img:string,
 }
+
+
+export type coachs = {
+  id: number;
+  title: string;
+  pos: string;
+  img: string;
+};
