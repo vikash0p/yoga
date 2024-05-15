@@ -1,4 +1,8 @@
-import {  Links,HeroData } from "./types";
+import {  Links,HeroData,chooses } from "./types";
+
+
+
+
 export const links:Links[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
@@ -80,3 +84,25 @@ export const yogaAsanas = [
   "ViparitaKarani",
 ];
 
+export const choose: chooses[] = [
+  {
+    id: "01",
+    title: "Meditaion",
+    des: "Nunc non blandit massa enim nec dui nunc mattis. Bibendum at varius vel pharetra. Volutpat consequat mauris nunc congue nisi. Elit scelerisque mauris pellentesque pulvinar.Viverra nam libero justo laoreet sit amet ante metus dictum cursus sit.",
+  },
+  {
+    id: "02",
+    title: "Relaxing Pose",
+    des: "Nunc non blandit massa enim nec dui nunc mattis. Bibendum at varius vel pharetra. Volutpat consequat mauris nunc congue nisi. Elit scelerisque mauris pellentesque pulvinar.Viverra nam libero justo laoreet sit amet ante metus dictum cursus sit.",
+  },
+  {
+    id: "03",
+    title: "Simhasana Yoga",
+    des: "Nunc non blandit massa enim nec dui nunc mattis. Bibendum at varius vel pharetra. Volutpat consequat mauris nunc congue nisi. Elit scelerisque mauris pellentesque pulvinar.Viverra nam libero justo laoreet sit amet ante metus dictum cursus sit.",
+  },
+  {
+    id: "04",
+    title: "Balancinü",
+    des: "Nunc non blandit massa enim nec dui nunc mattis. Bibendum at varius vel pharetra. Volutpat consequat mauris nunc congue nisi. Elit scelerisque mauris pellentesque pulvinar.Viverra nam libero justo laoreet sit amet ante metus dictum cursus sit.",
+  },
+];

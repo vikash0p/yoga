@@ -12,3 +12,10 @@ export type HeroData={
     des2:string,
     img:string
 }
+
+
+export type chooses={
+    id:string,
+    title:string,
+    des:string,
+}
