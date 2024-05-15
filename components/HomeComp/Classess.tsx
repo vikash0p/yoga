@@ -5,11 +5,11 @@ import { choose } from "@/utils/data";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import { motion } from "framer-motion";
+import { AnimatePresence, delay, motion } from "framer-motion";
 const Classess = () => {
-    const{theme}=useTheme();
+  const { theme } = useTheme();
   const [myImage, setMyImage] = useState<string>(choose[0].img);
-  const[myIndex,setMYIndex]=useState(0)
+  const [myIndex, setMYIndex] = useState(0);
 
   const ClickHandler = (index: number, img: string) => {
     setMyImage(img);
@@ -17,8 +17,15 @@ const Classess = () => {
   };
 
   const imageVariants = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1, transition: { duration: 0.5 } },
+    initial: { y: -50 },
+    animate: {
+      y: 0,
+      transition: {
+        delay: 0.3,
+        duration: 1,
+        type: "spring",
+      },
+    },
   };
 
   return (
@@ -71,20 +78,23 @@ const Classess = () => {
             );
           })}
         </div>
-        <motion.div
-          variants={imageVariants}
-          initial="initial"
-          animate="animate"
-          className="basis-[35%]"
-        >
-          <Image
-            src={myImage}
-            alt="image"
-            width={300}
-            height={300}
-            className=" py-5 lg:py-0 rounded-tl-full rounded-tr-full w-full md:h-[700px] md:py-9 lg:h-full object-cover object-center px-10"
-          />
-        </motion.div>
+        <AnimatePresence>
+          <motion.div
+            variants={imageVariants}
+            initial="initial"
+            animate="animate"
+            key={myImage}
+            className="basis-[35%]"
+          >
+            <Image
+              src={myImage}
+              alt="image"
+              width={300}
+              height={300}
+              className=" py-5 lg:py-0 rounded-tl-full rounded-tr-full w-full md:h-[700px] md:py-9 lg:h-full object-cover object-center px-10"
+            />
+          </motion.div>
+        </AnimatePresence>
       </div>
     </div>
   );
