@@ -1,17 +1,16 @@
 "use client";
-import { MoveRight } from "lucide-react";
 import { links } from "@/utils/data";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/button";
 import { ModeToggle } from "./ModeToggle";
 import { Sidebar } from "./SideBar";
 import { useTheme } from "next-themes";
+import MyButton from "./MyButton";
 
 const Navbar: React.FC = () => {
   const { theme } = useTheme();
   return (
-    <nav className="p-4">
+    <nav className={`p-4 sticky top-0 left-0 right-0 ${theme === "light" && "bg-[#eae6e1] "}`}>
       <div className="w-full flex justify-between items-center">
         {/* logo */}
         <div className="flex items-center">
@@ -38,15 +37,7 @@ const Navbar: React.FC = () => {
         {/* book session and mode toggle */}
         <div className="lg:flex hidden flex-row gap-3 lg:me-6 xl:me-10 ">
           {/* book the session */}
-          <button
-            className={`px-10  flex flex-row gap-2 border border-black rounded-full py-3 items-center group ${
-              theme === "dark" && "border-white"
-            }`}
-          >
-            <span>Book Now</span>{" "}
-            <MoveRight className="group-hover:translate-x-2 transition" />
-          </button>
-
+          <MyButton text={"Book Now"} />
           {/* add the ModeToggle */}
           <div className="lg:ms-5 xl:ms-10">
             <ModeToggle />
