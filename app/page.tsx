@@ -2,6 +2,7 @@ import Carousel from '@/components/Carousel'
 import Classess from '@/components/HomeComp/Classess';
 import Coaches from '@/components/HomeComp/Coaches';
 import Perfect from '@/components/HomeComp/Perfect';
+import Relax from '@/components/HomeComp/Relax';
 import YogaAssan from '@/components/HomeComp/YogaAssan';
 import { Elsie } from 'next/font/google';
 import React from 'react'
@@ -16,6 +17,7 @@ const Home = () => {
         <YogaAssan />
         <Classess/>
         <Coaches/>
+        <Relax />
     </div>
   )
 }

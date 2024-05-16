@@ -12,6 +12,7 @@ const Classess = () => {
   const [myIndex, setMYIndex] = useState(0);
 
   const ClickHandler = (index: number, img: string) => {
+
     setMyImage(img);
     setMYIndex(index);
   };
@@ -40,9 +41,9 @@ const Classess = () => {
         <div className="basis-[65%] space-y-4 lg:space-y-8">
           {choose.map((value, index) => {
             return (
-              <div
+              <section
                 key={value.des}
-                className="w-full flex flex-col md:flex-row gap-4 md:gap-5 lg:gap-7 cursor-pointer"
+                className="w-full flex flex-col md:flex-row gap-4 md:gap-5 lg:gap-7 cursor-pointer group  p-5 "
                 onClick={() => ClickHandler(index, value.img)}
               >
                 <div className="">
@@ -52,15 +53,15 @@ const Classess = () => {
                 </div>
                 <div className="">
                   <h2
-                    className={`font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${
-                      myIndex === index && "text-gray-500 "
+                    className={`font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl group-hover:text-gray-500  transition-colors duration-500 ease-linear ${
+                      myIndex === index && "text-gray-500  "
                     }`}
                   >
                     {value.title}{" "}
                   </h2>
                   <div className="flex flex-col md:flex-row justify-between gap-4">
                     <p
-                      className={`text-xl w-full ${
+                      className={`text-xl w-full group-hover:text-gray-500  transition-colors duration-500 ease-linear ${
                         myIndex === index && "text-gray-500 "
                       } `}
                     >
@@ -74,7 +75,7 @@ const Classess = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </section>
             );
           })}
         </div>
