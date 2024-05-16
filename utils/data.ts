@@ -150,18 +150,18 @@ export const profileData: profileDatas[] = [
   },
   {
     id: 2,
-    num: 15,
+    num: 10,
     title: "Number of Center",
   },
 
   {
     id: 3,
-    num: 15,
+    num: 100,
     title: "Yoga Accessories",
   },
   {
     id: 4,
-    num: 15,
+    num: 20,
     title: "Year of Experience",
   },
 ];

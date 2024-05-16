@@ -3,6 +3,7 @@ import Navbar from '@/components/reusableComp/Navbar'
 import React from 'react'
 import { ThemeProvider } from './theme-provider'
 import GoToTop from '@/components/reusableComp/GoToTop'
+import Footer from '@/components/reusableComp/Footer'
 
 const GlobalLayout = ({children}:{children:React.ReactNode}) => {
   return (
@@ -15,6 +16,7 @@ const GlobalLayout = ({children}:{children:React.ReactNode}) => {
         <Navbar />
         {children}
         <GoToTop/>
+        <Footer/>
       </ThemeProvider>
     </div>
   );

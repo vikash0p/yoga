@@ -6,7 +6,6 @@ import Perfect from '@/components/HomeComp/Perfect';
 import Queries from '@/components/HomeComp/Queries';
 import Relax from '@/components/HomeComp/Relax';
 import YogaAssan from '@/components/HomeComp/YogaAssan';
-import Footer from '@/components/reusableComp/Footer';
 import { Elsie } from 'next/font/google';
 import React from 'react'
 
@@ -23,7 +22,6 @@ const Home = () => {
         <Relax />
         <Queries/>
         <Gallery/>
-        <Footer/>
     </div>
   )
 }
