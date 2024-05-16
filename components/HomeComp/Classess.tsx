@@ -70,7 +70,7 @@ const Classess = () => {
                       type="button"
                       className=" flex flex-col items-center justify-center rounded-full hover:translate-x-2 duration-500 ease-in "
                     >
-                      <MoveRight size={40} />{" "}
+                      <MoveRight size={40} strokeWidth={0.8} />{" "}
                     </button>
                   </div>
                 </div>
