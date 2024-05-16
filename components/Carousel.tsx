@@ -28,7 +28,9 @@ export default function Carousel({ elsie }: { elsie: NextFont }) {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className={`mySwiper w-full h-96 md:min-h-screen ${theme=== "light" && "bg-[#eae6e1]"}`}
+        className={`mySwiper w-full h-96 md:min-h-screen ${
+          theme === "light" && "bg-[#eae6e1]"
+        }`}
       >
         {heroData.map((value) => (
           <SwiperSlide key={value.id} className="w-full h-full">
@@ -44,7 +46,9 @@ export default function Carousel({ elsie }: { elsie: NextFont }) {
                   <h2 className={`text-2xl lg:text-3xl ${elsie.className}`}>
                     {value.title}
                   </h2>
-                  <h5 className={`text-3xl lg:text-6xl ${elsie.className}`}>{value.des}</h5>
+                  <h5 className={`text-3xl lg:text-6xl ${elsie.className}`}>
+                    {value.des}
+                  </h5>
                   <p className="text-xl">{value.des2}</p>
                   <MyButton text={" Get Started"} />
                 </motion.div>
@@ -62,6 +66,8 @@ export default function Carousel({ elsie }: { elsie: NextFont }) {
                     alt="background image"
                     fill
                     className="object-contain object-bottom"
+                    sizes="500px"
+                    priority
                   />
                 </motion.div>
               </AnimatePresence>

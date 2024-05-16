@@ -21,6 +21,7 @@ const Perfect = () => {
             alt="images "
             fill
             className="object-contain ps-12"
+            sizes="(min-width: 1280px) calc(33.31vw - 47px), (min-width: 1040px) calc(50vw - 48px), calc(100vw - 48px)"
           />
         </div>
       </div>
@@ -62,6 +63,7 @@ const Perfect = () => {
             alt="images "
             fill
             className="object-cover p-5 object-center rounded-full"
+            sizes="(min-width: 1280px) calc(33.31vw - 39px), (min-width: 1040px) calc(50vw - 40px), calc(100vw - 40px)"
           />
         </div>
       </div>

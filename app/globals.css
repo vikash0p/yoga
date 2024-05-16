@@ -143,3 +143,10 @@
     transform: translateX(-100%);
   }
 }
+
+.reusableHeroBackground{
+  background-image: url('../public/class/breadcrumb-bgd.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

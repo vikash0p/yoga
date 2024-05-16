@@ -10,19 +10,22 @@ import MyButton from "./MyButton";
 const Navbar: React.FC = () => {
   const { theme } = useTheme();
   return (
-    <nav className={`p-4 sticky top-0 left-0 right-0 ${theme === "light" && "bg-[#eae6e1] "}`}>
+    <nav
+      className={`p-4 sticky top-0 left-0 right-0 ${
+        theme === "light" && "bg-[#eae6e1] "
+      }`}
+    >
       <div className="w-full flex justify-between items-center">
         {/* logo */}
         <div className="flex items-center">
-          <Link href="/">
+          <Link href="/" className="relative w-40 h-12">
             <Image
               src="/logo.svg"
               alt="logo"
-              width={128}
-              height={48}
+              fill
               priority
               sizes="(max-width: 768px) 100vw, 200px"
-              className="cursor-pointer w-40 h-12"
+              className="cursor-pointer w-40 h-12 object-contain aspect-auto"
             />
           </Link>
         </div>
