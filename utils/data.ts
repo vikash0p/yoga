@@ -1,4 +1,5 @@
-import { Links, HeroData, chooses, coachs } from "./types";
+import exp from "constants";
+import { Links, HeroData, chooses, coachs,profileDatas } from "./types";
 
 export const links: Links[] = [
   { href: "/", label: "Home" },
@@ -137,5 +138,30 @@ export const coach:coachs[] = [
     title: "Tonina",
     pos: "CEO ",
     img: "/team-05.jpg",
+  },
+];
+
+
+export const profileData: profileDatas[] = [
+  {
+    id: 1,
+    num: 15,
+    title: "Year of Experience",
+  },
+  {
+    id: 2,
+    num: 15,
+    title: "Number of Center",
+  },
+
+  {
+    id: 3,
+    num: 15,
+    title: "Yoga Accessories",
+  },
+  {
+    id: 4,
+    num: 15,
+    title: "Year of Experience",
   },
 ];

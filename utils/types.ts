@@ -28,3 +28,10 @@ export type coachs = {
   pos: string;
   img: string;
 };
+
+export type profileDatas={
+    id:number,
+    num:number,
+    title:string,
+
+}
