@@ -1,3 +1,4 @@
+import CustomerSay from "@/components/ClassesComp/CustomerSay";
 import Profile from "@/components/ClassesComp/Profile";
 import Yoga from "@/components/ClassesComp/Yoga";
 import ReusableHero from "@/components/reusableComp/ReusableHero";
@@ -9,6 +10,7 @@ const Class = () => {
       <ReusableHero text="Yoga Classes" />
       <Yoga />
       <Profile/>
+      <CustomerSay />
     </div>
   );
 };

@@ -35,3 +35,9 @@ export type profileDatas={
     title:string,
 
 }
+export type feedbacks = {
+  name: string;
+  feed: string;
+  position: string;
+  img: string;
+};

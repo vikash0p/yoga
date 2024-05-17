@@ -10,7 +10,7 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: "docs.material-tailwind.com",
+                hostname: "plus.unsplash.com" ,
                 port: '',
 
             },
