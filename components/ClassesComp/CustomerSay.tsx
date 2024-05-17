@@ -10,7 +10,7 @@ import Image from "next/image";
 import { Quote } from "lucide-react";
 export default function CustomerSay() {
   return (
-    <div className="flex flex-col gap-16 items-center  py-20">
+    <div className="flex flex-col gap-16 items-center pt-5 md:py-10 lg:py-20">
       <h1
         className={`text-3xl md:text-4xl lg:text-6xl font-semibold  ${elsie.className} `}
       >
@@ -44,15 +44,15 @@ export default function CustomerSay() {
           },
         }}
         modules={[Pagination]}
-        className="mySwiper max-w-md md:max-w-3xl lg:max-w-7xl h-[400px] cursor-pointer  "
+        className="mySwiper max-w-sm  lg:px-0 md:max-w-3xl lg:max-w-7xl h-80  lg:h-[400px] cursor-pointer  "
       >
         {feedback.map((value) => {
           return (
-            <SwiperSlide key={value.feed} className="">
-              <div className="space-y-5 ">
+            <SwiperSlide key={value.feed} className="px-1">
+              <div className=" space-y-2  md:space-y-5 ">
                 <Quote size={50} className="m-auto" />
                 <h3
-                  className={`text-xl line-clamp-3 md:line-clamp-none md:text-2xl font-semibold text-center  ${elsie.className} `}
+                  className={`text-xl line-clamp-3 md:line-clamp-none md:text-2xl md:font-semibold text-center   ${elsie.className} `}
                 >
                   {value.feed}{" "}
                 </h3>
