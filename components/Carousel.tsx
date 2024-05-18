@@ -68,7 +68,7 @@ export default function Carousel({ elsie }: { elsie: NextFont }) {
                     src={"/frame-img-1.png"}
                     alt="background image"
                     fill
-                    className=" border border-[#c1a78c] shadow-2xl shadow-[#c1a78c] m-auto w-full  rounded-full me-12 md:me-0 lg:ms-5 "
+                    className=" border border-[#c1a78c] shadow-2xl shadow-[#c1a78c] m-auto w-full  rounded-full me-12 md:me-0 lg:me-0 "
                     priority
                   />
                 </motion.div>
