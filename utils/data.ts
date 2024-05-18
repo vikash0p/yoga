@@ -1,5 +1,14 @@
 import exp from "constants";
-import { Links, HeroData, chooses, coachs,profileDatas, feedbacks,Benefits } from "./types";
+import {
+  Links,
+  HeroData,
+  chooses,
+  coachs,
+  profileDatas,
+  feedbacks,
+  Benefits,
+  blogs
+} from "./types";
 
 export const links: Links[] = [
   { href: "/", label: "Home" },
@@ -107,7 +116,7 @@ export const choose: chooses[] = [
   },
 ];
 
-export const coach:coachs[] = [
+export const coach: coachs[] = [
   {
     id: 1,
     title: "Joe Thomas",
@@ -140,7 +149,6 @@ export const coach:coachs[] = [
     img: "/team-05.jpg",
   },
 ];
-
 
 export const profileData: profileDatas[] = [
   {
@@ -229,7 +237,6 @@ export const feedback: feedbacks[] = [
   },
 ];
 
-
 export const Benefit: Benefits[] = [
   {
     title: "Relieving Stress",
@@ -251,4 +258,53 @@ export const Benefit: Benefits[] = [
     description:
       "Maecenas posuere morbi leo urna molestie. Tortor posuere ac consequat semper viverra nam.",
   },
+];
+
+export const blog:blogs[] = [
+  {
+    blogId: "xGbcoVaCKrUXy7PxKHB",
+    blogTitle: "describe write group barn grain anyway union dog ahead either neck ask hello list oxygen here slipped goose father forty forth cannot powder free",
+    blogImg: "/HOME2_class_image_02.jpg",
+  },
+  {
+    blogId: "U8XlSBKnvtC7d0G",
+    blogTitle: "son good roar soil progress snow customs firm peace course opportunity science meal constantly fox anyone every although function satellites generally personal cost torn",
+    blogImg: "/home2_image_gallery_01.jpg",
+  },
+  {
+    blogId: "t4yzGQnItLXVqKVN5",
+    blogTitle: "problem beat wealth doing sea hour mother shoulder beneath measure taught contain master mysterious scientific give satellites us real gave got popular cell fresh",
+    blogImg: "/home2_image_gallery_02.jpg",
+  },
+  {
+    blogId: "zf4iBJz9RXPIUK",
+    blogTitle: "picture entire thus mighty tongue fog pleasure itself triangle ride sort composed floating cast yellow fairly nearly object eleven hunt spin continued reach chief",
+    blogImg: "/home2_image_gallery_21.jpg",
+  },
+  {
+    blogId: "fhgcSfmIDNW",
+    blogTitle: "adult river flow settle excellent teacher fifth sort longer thirty bowl pitch if bus smoke production strength wrote continued of order exist light struggle",
+    blogImg: "/home2_image_gallery_03.jpg",
+  },
+  {
+    blogId: "1nhyq",
+    blogTitle: "success so work simple dried sort mind movement sit influence hay six common box food present reach forth cowboy flame engine gift wonder till",
+    blogImg: "/home2_image_gallery_05.jpg",
+  },
+  {
+    blogId: "vz7DbFX4QHCaKdQki67P",
+    blogTitle: "partly available pen root fighting slightly simply near fast identity maybe equally aware sunlight fed certainly gentle start iron plural needed attention herself wire",
+    blogImg: "/home2_image_gallery_06.jpg",
+  },
+  {
+    blogId: "ATGDTW0WW",
+    blogTitle: "usually cool mix doubt step worry could successful independent heard brief wrote wood lonely old like every nodded done morning nation within pretty label",
+    blogImg: "/home2_image_gallery_07.jpg",
+  },
+  {
+    blogId: "OPkOZwiyJe5iG",
+    blogTitle: "business by duty direct health bell troops sail divide rapidly each tell turn sense stomach teacher paid written machinery flame particular major film then",
+    blogImg: "/team-04.jpg",
+  },
+
 ];

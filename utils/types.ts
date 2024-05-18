@@ -46,3 +46,8 @@ export type Benefits= {
     title: string;
     description: string;
 }
+export type blogs= {
+    blogId: string;
+    blogTitle: string;
+    blogImg: any;
+}
