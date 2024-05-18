@@ -63,7 +63,10 @@ const LoginForm: React.FC = () => {
                     </label>
                   </div>
                   <div className="relative mt-10">
-                    <MyButton text="Submit" />
+                    <MyButton
+                      text="Submit"
+                      ariaLabel="Click Me Button with Arrow Icon with login"
+                    />
                   </div>
                 </form>
               </div>

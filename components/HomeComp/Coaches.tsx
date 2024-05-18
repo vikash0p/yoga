@@ -77,7 +77,10 @@ const Coaches = () => {
         })}
       </div>
       <div className="py-20 md:py-24 lg:py-32 flex flex-col items-center">
-        <MyButton text="View All Coaches" />
+        <MyButton
+          text="View All Coaches"
+          ariaLabel="Click Me Button with Arrow Icon"
+        />
       </div>
     </div>
   );

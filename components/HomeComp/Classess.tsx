@@ -35,7 +35,7 @@ const Classess = () => {
         <h1 className="tex-4xl md:text-4xl lg:text-5xl xl:text-6xl font-serif">
           Choose Your Class
         </h1>
-        <MyButton text="View All" />
+        <MyButton text="View All" ariaLabel="Click Me Button with view all" />
       </div>
       <div className="w-full flex flex-col lg:flex-row py-10 px-10 ">
         <div className="basis-[65%] space-y-4 lg:space-y-8">

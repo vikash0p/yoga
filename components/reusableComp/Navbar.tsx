@@ -40,7 +40,10 @@ const Navbar: React.FC = () => {
         {/* book session and mode toggle */}
         <div className="lg:flex hidden flex-row gap-3 lg:me-6 xl:me-10 ">
           {/* book the session */}
-          <MyButton text={"Book Now"} />
+          <MyButton
+            text={"Book Now"}
+            ariaLabel="Click Me Button with Arrow Icon"
+          />
           {/* add the ModeToggle */}
           <div className="lg:ms-5 xl:ms-10">
             <ModeToggle />
@@ -50,6 +53,7 @@ const Navbar: React.FC = () => {
         {/* add the sidebar */}
         <button type="button" className="md:hidden">
           <Sidebar />
+          <span className="sr-only">Toggle Sidebar</span>
         </button>
       </div>
     </nav>

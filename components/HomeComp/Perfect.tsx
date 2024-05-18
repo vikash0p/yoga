@@ -35,7 +35,10 @@ const Perfect = () => {
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia.
           </h5>
-          <MyButton text="Check Schedule" />
+          <MyButton
+            text="Check Schedule"
+            ariaLabel="Click Me Button with Arrow Icon"
+          />
         </div>
         <div className="flex md:justify-evenly lg:justify-between py-10  pe-10">
           <div className="font-mono">

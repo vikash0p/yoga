@@ -126,7 +126,10 @@ const RegisterForm: React.FC = () => {
                     </div>
                   </div>
                   <div className="relative mt-4">
-                   <MyButton text="Submit" />
+                    <MyButton
+                      text="Submit"
+                      ariaLabel="Click Me Button with Arrow Icon with register"
+                    />
                   </div>
                 </form>
               </div>
