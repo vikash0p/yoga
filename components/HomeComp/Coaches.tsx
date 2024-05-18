@@ -42,7 +42,7 @@ const Coaches = () => {
                   <p>{value.pos}</p>
                 </div>
               </div>
-              <div className="absolute left-16 right-5 bottom-5 flex gap-4 items-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+              <div className="absolute left-10 right-5 bottom-20 flex gap-4 items-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                 <span
                   className={`bg-[#d4cbc2] p-2 rounded-full cursor-pointer ${
                     theme === "dark" ? "text-black" : ""
