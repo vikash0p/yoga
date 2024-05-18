@@ -15,7 +15,6 @@ export const links: Links[] = [
   { href: "/about", label: "About Us" },
   { href: "/classess", label: "Classes" },
   { href: "/blog", label: "Blog" },
-  { href: "/shop", label: "Shop" },
   { href: "/contact", label: "Contact Us" },
 ];
 
