@@ -25,7 +25,7 @@ const Coaches = () => {
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-x-5 gap-y-10 place-items-center xl:px-10 py-10 ">
         {coach.map((value) => {
           return (
-            <div key={value.id} className="group relative">
+            <div key={value.id} className="group relative h-96">
               <div className="w-72 h-80 bg-[#d4cbc2] rounded-2xl group-hover:-translate-x-3 group-hover:translate-y-3 duration-500 ease-linear"></div>
               <div className="absolute top-0">
                 <Image
