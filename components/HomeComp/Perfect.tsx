@@ -60,12 +60,12 @@ const Perfect = () => {
         </div>
       </div>
       <div className="">
-        <div className="relative w-full h-[600px]  ">
+        <div className="relative w-[90%] m-auto h-[500px]  ">
           <Image
             src={"/fiiller3-img.jpg"}
             alt="images "
             fill
-            className="object-cover p-5 object-center rounded-full"
+            className="object-cover  object-center rounded-full border border-[#c1a78c] shadow-2xl shadow-[#c1a78c]"
             sizes="(min-width: 1280px) calc(33.31vw - 39px), (min-width: 1040px) calc(50vw - 40px), calc(100vw - 40px)"
           />
         </div>

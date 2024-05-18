@@ -92,7 +92,7 @@ const Classess = () => {
               alt="image"
               width={300}
               height={300}
-              className=" py-5 lg:py-0 rounded-tl-full rounded-tr-full w-full md:h-[700px] md:py-9 lg:h-full object-cover object-center px-10"
+              className=" border border-[#c1a78c] shadow-2xl shadow-[#c1a78c]  lg:py-0 rounded-tl-full rounded-tr-full w-full md:h-[700px]  lg:h-full object-cover object-center "
             />
           </motion.div>
         </AnimatePresence>

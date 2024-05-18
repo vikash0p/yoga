@@ -31,7 +31,7 @@ export default function Review() {
                   <Image
                     src={value.img}
                     alt={value.name}
-                    className="w-52 h-52 m-auto lg:m-0 lg:w-[500px] lg:h-96 object-cover object-center rounded-full border border-[#c1a78c] "
+                    className=" border border-[#c1a78c] shadow-2xl shadow-[#c1a78c] w-52 h-52 m-auto lg:m-0 lg:w-[500px] lg:h-96 object-cover object-center rounded-full  "
                     width={500}
                     height={400}
                   />

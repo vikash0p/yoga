@@ -7,7 +7,7 @@ const ReusableImage = ({img}:{img:string}) => {
     <Image
       src={img}
       alt="benefits image"
-      className="object-cover object-center rounded-full"
+      className="object-cover object-center rounded-full border border-[#c1a78c] shadow-2xl shadow-[#c1a78c] "
       fill
       sizes="100vw"
     />

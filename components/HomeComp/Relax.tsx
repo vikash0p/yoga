@@ -10,7 +10,7 @@ const Relax = () => {
           src={"/filler5-img-01.jpg"}
           alt="image"
           fill
-          className="object-cover object-center rounded-full hover:scale-105 transition-transform duration-700 ease-linear"
+          className="border border-[#c1a78c] shadow-2xl shadow-[#c1a78c]  object-cover object-center rounded-full hover:scale-105 transition-transform duration-700 ease-linear"
           sizes="(min-width: 1040px) 37.5vw, (min-width: 780px) 50vw, 75vw"
         />
       </div>
