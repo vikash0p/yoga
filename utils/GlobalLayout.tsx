@@ -4,7 +4,7 @@ import React from 'react'
 import { ThemeProvider } from './theme-provider'
 import GoToTop from '@/components/reusableComp/GoToTop'
 import Footer from '@/components/reusableComp/Footer'
-
+import { Analytics } from "@vercel/analytics/react";
 const GlobalLayout = ({children}:{children:React.ReactNode}) => {
   return (
     <div>
@@ -12,11 +12,13 @@ const GlobalLayout = ({children}:{children:React.ReactNode}) => {
         attribute="class"
         defaultTheme="system"
         enableSystem
-        disableTransitionOnChange >
+        disableTransitionOnChange
+      >
         <Navbar />
         {children}
-        <GoToTop/>
-        <Footer/>
+        <GoToTop />
+        <Footer />
+        <Analytics />
       </ThemeProvider>
     </div>
   );
