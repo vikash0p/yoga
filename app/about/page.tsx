@@ -1,4 +1,5 @@
 import BenefitOf from '@/components/AboutComponent/BenefitOf'
+import ShapeMind from '@/components/AboutComponent/ShapeMind'
 import Review from '@/components/ClassesComp/Review'
 import Coaches from '@/components/HomeComp/Coaches'
 import ReusableHero from '@/components/reusableComp/ReusableHero'
@@ -9,6 +10,7 @@ const page = () => {
     <div>
       <ReusableHero text='About' />
       <BenefitOf />
+      <ShapeMind />
       <Review/>
       <Coaches />
     </div>
