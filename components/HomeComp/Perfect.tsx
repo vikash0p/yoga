@@ -40,9 +40,9 @@ const Perfect = () => {
             ariaLabel="Click Me Button with Arrow Icon"
           />
         </div>
-        <div className="flex md:justify-evenly lg:justify-between py-10  pe-10">
+        <div className="flex justify-between md:justify-evenly lg:justify-between py-10  pe-10">
           <div className="font-mono">
-            <h3 className="flex text-4xl md:text-4xl lg:text-6xl items-center">
+            <h3 className="flex text-4xl md:text-4xl lg:text-6xl   items-center">
               <span>8K</span> <Plus className="" strokeWidth={0.5} size={40} />
             </h3>
             <p className=" text-xl md:text-2xl">Happy Clients</p>

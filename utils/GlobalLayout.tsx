@@ -7,7 +7,7 @@ import Footer from '@/components/reusableComp/Footer'
 import { Analytics } from "@vercel/analytics/react";
 const GlobalLayout = ({children}:{children:React.ReactNode}) => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <ThemeProvider
         attribute="class"
         defaultTheme="system"

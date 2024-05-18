@@ -62,13 +62,13 @@ export default function Carousel({ elsie }: { elsie: NextFont }) {
                   initial={{ opacity: 0, y: -100 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 0.7 }}
-                  className="relative hidden md:block w-[500px] h-[500px]"
+                  className="relative hidden md:block w-[500px] h-[500px] "
                 >
                   <Image
                     src={"/frame-img-1.png"}
                     alt="background image"
                     fill
-                    className="object-contain object-bottom"
+                    className="object-contain object-bottom "
                     sizes="500px"
                     priority
                   />
@@ -82,7 +82,7 @@ export default function Carousel({ elsie }: { elsie: NextFont }) {
                   transition={{ duration: 0.5 }}
                   className="absolute top-0 right-20 md:top-96 lg:top-0"
                 >
-                  <Image src={value.img} alt="hero" width={600} height={600} />
+                  <Image src={value.img} alt="hero" className="object-center" width={600} height={600} />
                 </motion.div>
               </AnimatePresence>
             </div>
