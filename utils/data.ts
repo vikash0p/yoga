@@ -16,6 +16,8 @@ export const links: Links[] = [
   { href: "/classess", label: "Classes" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact Us" },
+  { href: "/login", label: "Login" },
+  { href: "/register", label: "Register" },
 ];
 
 export const heroData: HeroData[] = [

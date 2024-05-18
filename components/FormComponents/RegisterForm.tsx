@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import MyButton from "../reusableComp/MyButton";
 
 const RegisterForm: React.FC = () => {
   const [username, setUsername] = useState("");
@@ -21,7 +22,7 @@ const RegisterForm: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    <div className="min-h-screen  py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
         <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
@@ -40,7 +41,7 @@ const RegisterForm: React.FC = () => {
                       id="username"
                       name="username"
                       type="text"
-                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-blue-600"
+                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 bg-white focus:outline-none focus:border-blue-600"
                       placeholder="Username"
                       value={username}
                       onChange={(e) => setUsername(e.target.value)}
@@ -58,7 +59,7 @@ const RegisterForm: React.FC = () => {
                       id="email"
                       name="email"
                       type="text"
-                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-blue-600"
+                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 bg-white focus:outline-none focus:border-blue-600"
                       placeholder="Email address"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
@@ -76,7 +77,7 @@ const RegisterForm: React.FC = () => {
                       id="password"
                       name="password"
                       type={showPassword ? "text" : "password"}
-                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-blue-600"
+                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 bg-white focus:outline-none focus:border-blue-600"
                       placeholder="Password"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
@@ -100,7 +101,7 @@ const RegisterForm: React.FC = () => {
                       id="confirm-password"
                       name="confirm-password"
                       type={showConfirmPassword ? "text" : "password"}
-                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-blue-600"
+                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 bg-white focus:outline-none focus:border-blue-600"
                       placeholder="Confirm Password"
                       value={confirmPassword}
                       onChange={(e) => setConfirmPassword(e.target.value)}
@@ -125,12 +126,7 @@ const RegisterForm: React.FC = () => {
                     </div>
                   </div>
                   <div className="relative mt-4">
-                    <button
-                      type="submit"
-                      className="bg-blue-500 text-white rounded-md px-2 py-1"
-                    >
-                      Sign Up
-                    </button>
+                   <MyButton text="Submit" />
                   </div>
                 </form>
               </div>
