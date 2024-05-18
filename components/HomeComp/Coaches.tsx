@@ -22,7 +22,7 @@ const Coaches = () => {
             : "Meet Our Trainers"
         }
       />
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-x-5 gap-y-10 place-items-center xl:px-10 py-10 overflow-x-hidden">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-x-5 gap-y-10 place-items-center xl:px-10 py-10 ">
         {coach.map((value) => {
           return (
             <div key={value.id} className="group relative">
