@@ -80,9 +80,9 @@ export default function Carousel({ elsie }: { elsie: NextFont }) {
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="absolute top-0 right-20 md:top-96 lg:top-0"
+                  className="absolute top-0 right-0 md:right-20 md:top-96 lg:top-0"
                 >
-                  <Image src={value.img} alt="hero" className="object-center" width={600} height={600} />
+                  <Image src={value.img} alt="hero" className="object-contain " width={600} height={600} />
                 </motion.div>
               </AnimatePresence>
             </div>

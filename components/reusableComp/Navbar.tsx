@@ -51,10 +51,10 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* add the sidebar */}
-        <button type="button" className="md:hidden">
+        <div className="md:hidden">
           <Sidebar />
-          <span className="sr-only">Toggle Sidebar</span>
-        </button>
+         
+        </div>
       </div>
     </nav>
   );
