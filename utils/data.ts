@@ -1,5 +1,5 @@
 import exp from "constants";
-import { Links, HeroData, chooses, coachs,profileDatas, feedbacks } from "./types";
+import { Links, HeroData, chooses, coachs,profileDatas, feedbacks,Benefits } from "./types";
 
 export const links: Links[] = [
   { href: "/", label: "Home" },
@@ -226,5 +226,29 @@ export const feedback: feedbacks[] = [
     feed: "Maverick Mohr, with Lonnie Corwin's feed, excels in his role as Eldridge Gusikowski II. Rey Grant's images bring Maverick's efforts into sharp focus, making his contributions stand out.",
     position: "Eldridge Gusikowski II",
     img: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+  },
+];
+
+
+export const Benefit: Benefits[] = [
+  {
+    title: "Relieving Stress",
+    description:
+      "Sed risus ultricies tristique nulla. Malesuada fames ac turpis egestas maecenas pharetra.",
+  },
+  {
+    title: "Flexibility",
+    description:
+      "Aliquet sagittis id purus ut faucibus pulvinar. Arcu felis bibendum ut tristique et egestas.",
+  },
+  {
+    title: "Reduce Anxiety",
+    description:
+      "Adipiscing elit pellentesque habitant morbi senectus netus et. Gravida in fermentum.",
+  },
+  {
+    title: "Mental Health",
+    description:
+      "Maecenas posuere morbi leo urna molestie. Tortor posuere ac consequat semper viverra nam.",
   },
 ];

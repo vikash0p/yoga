@@ -41,3 +41,8 @@ export type feedbacks = {
   position: string;
   img: string;
 };
+
+export type Benefits= {
+    title: string;
+    description: string;
+}

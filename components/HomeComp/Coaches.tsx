@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { coach } from "@/utils/data";
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
@@ -6,22 +6,21 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import React from "react";
 import MyButton from "../reusableComp/MyButton";
-
+import CoachesHeading from "./CoachesHeading";
+import { usePathname } from "next/navigation";
 const Coaches = () => {
-    const{theme}=useTheme();
+  const { theme } = useTheme();
+  const pathname = usePathname();
 
   return (
     <div className="py-5 md:py-8 lg:py-12 xl:py-20 w-full">
-      <motion.h1
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5 }}
-        className="w-full text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-semibold text-center lg:w-3/4 m-auto antialiased leading-10 -tracking-wider  "
-      >
-        Find The Strength @ Of Your MindAnd Keep The Health@And Beauty Of
-        YourSoul Meet Our Coaches
-      </motion.h1>
-
+      <CoachesHeading
+        text={
+          pathname === "/"
+            ? " Find The Strength @ Of Your MindAnd Keep The Health@And Beauty Of YourSoul Meet Our Coaches"
+            : "Meet Our Trainers"
+        }
+      />
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-x-20 gap-y-24 place-items-center xl:px-10 py-10 ">
         {coach.map((value) => {
           return (

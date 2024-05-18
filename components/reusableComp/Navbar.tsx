@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
   const { theme } = useTheme();
   return (
     <nav
-      className={`p-4 sticky top-0 left-0 right-0 ${
+      className={`p-4 sticky top-0 left-0 right-0 z-50 ${
         theme === "light" && "bg-[#eae6e1] "
       }`}
     >
