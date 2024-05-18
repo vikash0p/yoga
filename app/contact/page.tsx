@@ -2,6 +2,23 @@
 import ReusableHero from "@/components/reusableComp/ReusableHero";
 import React from "react";
 import ContactPage from "@/components/ContactComponent/ContactPage";
+import { Metadata } from "next";
+
+export const contactUsMetadata: Metadata = {
+  title: "Contact Us - Mantra",
+  description:
+    "Get in touch with us for any queries or support. We are here to help you on your holistic yoga journey.",
+  applicationName: "Mantra",
+  category: "fitness",
+  openGraph: {
+    title: "Contact Us - Mantra",
+    description:
+      "Get in touch with us for any queries or support. We are here to help you on your holistic yoga journey.",
+    url: "https://mantra.example.com/contact-us",
+    type: "website",
+  },
+};
+
 const Contact: React.FC = () => {
   return (
     <div>
