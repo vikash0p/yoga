@@ -59,7 +59,10 @@ const BlogData: React.FC = () => {
             >
               {blog.blogTitle}
             </h5>
-            <MyButton text="Read More" />
+            <MyButton
+              text="Read More"
+              ariaLabel="Click Me Button with Arrow Icon with read more"
+            />
           </div>
         ))}
       </div>

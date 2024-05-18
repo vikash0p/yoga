@@ -50,7 +50,10 @@ export default function Carousel({ elsie }: { elsie: NextFont }) {
                     {value.des}
                   </h5>
                   <p className="text-xl">{value.des2}</p>
-                  <MyButton text={" Get Started"} />
+                  <MyButton
+                    text={" Get Started"}
+                    ariaLabel="Click Me Button with Arrow Icon with get Started"
+                  />
                 </motion.div>
               </AnimatePresence>
               <AnimatePresence>

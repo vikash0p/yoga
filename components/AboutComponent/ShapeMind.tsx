@@ -20,10 +20,13 @@ const ShapeMind = () => {
           purus viverra accumsan. In dictum non consectetur a. Sed sed risus
           pretium quam.
         </p>
-        <MyButton text="check Schedule" />
-        <div className='flex ga5 justify-evenly lg:pe-20'>
+        <MyButton
+          text="check Schedule"
+          ariaLabel="Click Me Button with Arrow Icon with check Schedule"
+        />
+        <div className="flex ga5 justify-evenly lg:pe-20">
           <div className="">
-            <div className='text-5xl flex items-center'>
+            <div className="text-5xl flex items-center">
               5k <Plus size={40} strokeWidth={0.8} />{" "}
             </div>
             <p>People Benefited</p>
@@ -31,7 +34,7 @@ const ShapeMind = () => {
 
           <div className="">
             <div className="">
-              <div className='text-5xl flex items-center'>
+              <div className="text-5xl flex items-center">
                 5k <Plus size={40} strokeWidth={0.8} />{" "}
               </div>
               <p>People Benefited</p>

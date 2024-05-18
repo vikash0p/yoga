@@ -39,7 +39,10 @@ export default function NotFound() {
         </div>
       </div>
       <Link href="/">
-        <MyButton text="Return Home" />{" "}
+        <MyButton
+          text="Return Home"
+          ariaLabel="Click Me Button with Arrow Icon not found"
+        />{" "}
       </Link>
     </div>
   );
