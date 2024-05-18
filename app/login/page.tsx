@@ -3,7 +3,7 @@ import ReusableHero from '@/components/reusableComp/ReusableHero'
 import React from 'react'
 import { Metadata } from "next";
 
-export const loginMetadata: Metadata = {
+ const metadata: Metadata = {
   title: "Login - Mantra",
   description:
     "Access your Mantra account to manage your classes, profile, and more. Log in to continue your yoga journey.",

@@ -8,8 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
       "Yoga: a holistic practice uniting mind, body, and spirit through postures, breathwork, and meditation. Enhances flexibility, strength, and inner peace, fostering balance and harmony within oneself and the universe.",
     start_url: "/",
     display: "standalone",
-    background_color: "#ffffff",
-    theme_color: "#ffffff",
+
     orientation: "portrait-primary",
     icons: [
       {

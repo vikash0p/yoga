@@ -48,9 +48,9 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* add the sidebar */}
-        <div className="md:hidden">
+        <button type="button" className="md:hidden">
           <Sidebar />
-        </div>
+        </button>
       </div>
     </nav>
   );

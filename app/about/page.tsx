@@ -7,7 +7,7 @@ import React from 'react'
 
 import { Metadata } from "next";
 
-export const aboutUsMetadata: Metadata = {
+ const metadata: Metadata = {
   title: "About Us - Mantra",
   description:
     "Learn more about Mantra, our mission, vision, and the team dedicated to bringing holistic yoga practices to you.",

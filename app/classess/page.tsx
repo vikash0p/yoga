@@ -6,7 +6,7 @@ import ReusableHero from "@/components/reusableComp/ReusableHero";
 import React from "react";
 import { Metadata } from "next";
 
-export const classesMetadata: Metadata = {
+ const metadata: Metadata = {
   title: "Classes - Mantra",
   description:
     "Explore our diverse range of yoga classes designed for all levels. Find the perfect class to enhance your practice.",

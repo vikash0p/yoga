@@ -4,7 +4,7 @@ import React from "react";
 import ContactPage from "@/components/ContactComponent/ContactPage";
 import { Metadata } from "next";
 
-export const contactUsMetadata: Metadata = {
+ const metadata: Metadata = {
   title: "Contact Us - Mantra",
   description:
     "Get in touch with us for any queries or support. We are here to help you on your holistic yoga journey.",

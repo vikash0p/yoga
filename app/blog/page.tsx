@@ -3,7 +3,7 @@ import ReusableHero from '@/components/reusableComp/ReusableHero'
 import React from 'react'
 import { Metadata } from "next";
 
-export const blogMetadata: Metadata = {
+ const metadata: Metadata = {
   title: "Blog - Mantra",
   description:
     "Read our latest blog posts on yoga, wellness, and holistic living. Stay informed and inspired with Mantra.",
